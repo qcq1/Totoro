@@ -2,6 +2,9 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
+    allowedHosts: [
+      'wxl475.cn' // 允许访问的域名地址，即花生壳内网穿透的地址
+    ],
     host: '0.0.0.0',
     port: 80
     // proxy: {
