@@ -16,5 +16,7 @@ module.exports = defineConfig({
     //     }
     //   }
     // }
-  }
+  },
+  // npm run build 输出目录名更改，默认是dist
+  outputDir: './html'
 })
