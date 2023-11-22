@@ -4,10 +4,10 @@ import App from '@/App.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'main',
+    name: 'homepage',
     component: App,
     meta: {
-      title: '星辉万物'
+      title: 'OurDiary'
     }
   }
 ]
