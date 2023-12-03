@@ -7,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'homepage',
     component: App,
     meta: {
-      title: 'OurDiary'
+      title: '隆喵~'
     }
   }
 ]
