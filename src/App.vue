@@ -1,33 +1,40 @@
 <template>
+  <div class="videoContainer">
+    <video class="fullscreenVideo" id="bgVid" playsinline="" autoplay="" muted="" loop="">
+      <source src="https://qcq-wxl.oss-cn-beijing.aliyuncs.com/1.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="common-layout">
-    <div class="videoContainer">
-      <video class="fullscreenVideo" id="bgVid" playsinline="" autoplay="" muted="" loop="">
-        <source src="https://qcq-wxl.oss-cn-beijing.aliyuncs.com/1.mp4" type="video/mp4">
-      </video>
-    </div>
-    <el-button v-btn class="el-button" key="切换背景" type="success" text>切换背景</el-button>
+    <el-container>
+      <el-header style="padding: 0">
+        <el-button v-btn class="green-button" text>🎨🎨🎨</el-button>
+      </el-header>
+      <el-main style="padding: 0">
+        <iframe src="/static/HeartVue.html" style="width: 12vw;min-height: 24vh;border-width: 0;margin-left: 42vw"></iframe>
+      </el-main>
+    </el-container>
   </div>
 </template>
 
-<script setup lang="ts">
+<script>
 </script>
 
 <style>
   body{
     margin: 0;
   }
-  .el-button:hover {
-    background: #67c23a !important;
-    color: white !important;
-    font-weight: bold;
-    border-color: #67c23a !important;
+  .green-button{
+    float: right;
+    min-width: 5vw;
+    min-height: 5vh;
   }
-  /*按钮点击*/
-  .el-button:focus {
+  .green-button:hover {
     background: #67c23a !important;
     color: white !important;
     font-weight: bold;
     border-color: #67c23a !important;
+    min-width: 6vw;
+    min-height: 6vh;
   }
   .videoContainer{
     position: fixed;
